@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en"dir="lrt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>طالب باحث</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="intro">
+      <div class="intro-content">
+            <h1 class="intro-text"></h1>
+            <p class="intro-sub">Loading my world...</p>
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo"><span>Bilal Hamouti</span></a>
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    <nav class="navbar">
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="welcome">BIENVENUE SUR MON WEBSITE</p>
+          <h1>Bonjour, je suis <span>BILAL</span></h1>
+          <h2>Développeur informatique</h2>
+          <p>
+            Je crée des applications web modernes, des interfaces propres
+            et des solutions informatiques adaptées aux besoins des utilisateurs.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">Voir mes projets</a>
+            <a href="#contact" class="btn secondary">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="assets/profile.jpg" alt="Photo de profil">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-title">
+        <p>QUI SUIS-JE ?</p>
+        <h2>À propos de moi</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/profile.jpg" alt="Portrait">
+        </div>
+
+        <div class="about-content">
+          <h3>Développeur & passionné d'informatique</h3>
+          <p>
+            Je suis un développeur passionné par la création de sites web
+            et d'applications de gestion. J'aime transformer une idée en
+            une solution simple, moderne et fonctionnelle.
+          </p>
+
+          <div class="info-grid">
+            <div><strong>Profil</strong><span>Développeur informatique</span></div>
+            <div><strong>Technologies</strong><span>HTML, CSS, JS, PHP, MySQL</span></div>
+            <div><strong>Projet</strong><span>Applications Web & Gestion</span></div>
+            <div><strong>Objectif</strong><span>Continuer à progresser</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-title">
+        <p>CE QUE JE SAIS FAIRE</p>
+        <h2>Mes compétences</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>HTML5</h3>
+          <p>Création de structures web propres et sémantiques.</p>
+          <div class="progress"><span style="width: 90%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">#</div>
+          <h3>CSS3</h3>
+          <p>Interfaces modernes, responsive et animations.</p>
+          <div class="progress"><span style="width: 85%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Interactions, validation et fonctionnalités dynamiques.</p>
+          <div class="progress"><span style="width: 75%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">PHP</div>
+          <h3>PHP</h3>
+          <p>Développement côté serveur et gestion des données.</p>
+          <div class="progress"><span style="width: 80%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">DB</div>
+          <h3>MySQL</h3>
+          <p>Conception de bases de données et requêtes SQL.</p>
+          <div class="progress"><span style="width: 80%"></span></div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">C#</div>
+          <h3>C# / WinForms</h3>
+          <p>Applications desktop et gestion avec SQL Server.</p>
+          <div class="progress"><span style="width: 75%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-title">
+        <p>MON TRAVAIL</p>
+        <h2>Mes projets</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Application de gestion</h3>
+          <p>
+            Application permettant de gérer les clients, les opérations,
+            les paiements et le suivi des données.
+          </p>
+          <div class="tags">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Site Web Portfolio</h3>
+          <p>
+            Portfolio personnel responsive présentant le profil,
+            les compétences, les projets et les moyens de contact.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Application Colis</h3>
+          <p>
+            Solution de gestion et de suivi des colis avec expéditeurs,
+            destinataires, stock, livraison et tracking.
+          </p>
+          <div class="tags">
+            <span>C#</span><span>SQL Server</span><span>WinForms</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title">
+        <p>PARLONS ENSEMBLE</p>
+        <h2>Contactez-moi</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Une idée de projet ?</h3>
+          <p>
+            Vous pouvez me contacter pour discuter d'un projet web,
+            d'une application de gestion ou d'une collaboration.
+          </p>
+
+          <div class="contact-item">
+            <span>✉</span>
+            <div><strong>Email</strong><p>	eljarmouni.med19@gmail.com</p></div>
+          </div>
+
+          <div class="contact-item">
+            <span>☎</span>
+            <div><strong>Téléphone</strong><p>+212 6 39 79 88 16</p></div>
+          </div>
+
+          <div class="contact-item">
+            <span>⌖</span>
+            <div><strong>Localisation</strong><p>Oujda, Maroc</p></div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Votre nom" required>
+          <input type="email" id="email" placeholder="Votre email" required>
+          <input type="text" id="subject" placeholder="Sujet" required>
+          <textarea id="message" rows="6" placeholder="Votre message" required></textarea>
+          <button type="submit" class="btn primary">Envoyer le message</button>
+          <p id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Mon Portfolio — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
