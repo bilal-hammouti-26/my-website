@@ -152,7 +152,7 @@ body.no-scroll {
   align-items: center;
   background:
     linear-gradient(rgba(5, 12, 18, .57), rgba(5, 12, 18, .76)),
-    url("assets/background-group.jpg") center/cover fixed no-repeat;
+    url("background-group.jpg") center/cover fixed no-repeat;
   overflow: hidden;
 }
 
@@ -438,7 +438,7 @@ body.no-scroll {
 .contact {
   background:
     linear-gradient(rgba(5,12,18,.91), rgba(5,12,18,.95)),
-    url("assets/background-group.jpg") center/cover fixed no-repeat !important;
+    url("background-group.jpg") center/cover fixed no-repeat !important;
 }
 
 .contact-grid {
