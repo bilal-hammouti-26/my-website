@@ -1,9 +1,3 @@
-/* =====================================================
-   Dév MEJ
-   JavaScript complet
-   Thème | Menu | Animations | Contact | Documents
-===================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
     "use strict";
 
@@ -499,12 +493,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// ===== كيقرا الملفات أوتوماتيك =====
 async function openDocs(carteNum, type){
   const folderPath = `documents/carte${carteNum}/${type}`;
-  const apiUrl = `https://api.github.com/repos/Dev-web-med/site-web/contents/${folderPath}?ref=main`;
+  const apiUrl = `https://api.github.com/repos/bilal-hammouti-26/my-website/contents/${folderPath}?ref=main`;
   
   document.getElementById('smallBarTitle').innerText = `${type.toUpperCase()} - Carte ${carteNum}`;
-  document.getElementById('docList').innerHTML = `<p style="color:#fff; text-align:center;">⏳ كنجبد...</p>`;
+  document.getElementById('docList').innerHTML = `<p style="color:#fff; text-align:center;">⏳ ...</p>`;
   document.getElementById('smallBarModal').style.display = "block";
   document.body.style.overflow = "hidden";
 
@@ -513,14 +508,17 @@ async function openDocs(carteNum, type){
     const res = await fetch(apiUrl);
     if(!res.ok) throw new Error();
     const data = await res.json();
-    files = data.filter(f=>f.type==='file').map(f=>({name:f.name, url:f.download_url}));
+    files = data.filter(f=>f.type==='file' && f.name !== '.gitkeep' && !f.name.startsWith('.')).map(f=>{
+      const pagesUrl = `https://bilal-hammouti-26.github.io/my-website/${folderPath}/${encodeURIComponent(f.name)}`;
+      return {name:f.name, url: pagesUrl};
+    });
   }catch(e){
-    document.getElementById('docList').innerHTML = `<p style="color:#ff8; padding:15px; text-align:center;">📭 المجلد خاوي<br><code>${folderPath}</code><br>منين تطلعو لـ GitHub غادي يبانو الملفات أوتوماتيك</p>`;
+    document.getElementById('docList').innerHTML = `<p style="color:#ff8; padding:15px; text-align:center;">📭 vide</p>`;
     return;
   }
 
   if(files.length===0){
-    document.getElementById('docList').innerHTML = `<p style="color:#fff; text-align:center;">📭 ما كاين والو</p>`;
+    document.getElementById('docList').innerHTML = `<p style="color:#fff; text-align:center;">📭 vide</p>`;
     return;
   }
 
@@ -529,25 +527,31 @@ async function openDocs(carteNum, type){
   files.forEach(f=>{
     const row = document.createElement('div');
     row.className = "doc-row";
-    row.innerHTML = `<div class="doc-name">📄 ${f.name.replace('.pdf','').replace('.docx','').replace('.pptx','')}</div><button class="btn-voir">Voir</button>`;
+    const cleanName = f.name.replace('.pdf','').replace('.docx','').replace('.pptx','').replace(/_/g,' ');
+    row.innerHTML = `<div class="doc-name">📄 ${cleanName}</div><button class="btn-voir">Voir</button>`;
     row.querySelector('.btn-voir').onclick = () => openPdfFull(f.name, f.url, type);
     list.appendChild(row);
   });
 }
 
+// ===== هادي هي اللي بدلناها باش PDF يتقرا ماشي يتحمل =====
 function openPdfFull(name, url, type){
   document.getElementById('pdfFullTitle').innerText = name;
   const frame = document.getElementById('pdfFullFrame');
-  if(type==='pdf') frame.src = url;
-  else frame.src = `https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`;
+  
+  // قارئ Mozilla الرسمي - كيخلي PDF يتقرا فالصفحة
+  const viewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(url)}`;
+  frame.src = viewerUrl;
+  
   document.getElementById('pdfFullModal').style.display = "flex";
   document.getElementById('smallBarModal').style.display = "none";
+
+
 }
 
 function closeSmallBar(){ document.getElementById('smallBarModal').style.display="none"; document.body.style.overflow="auto"; }
 function closePdfFull(){ document.getElementById('pdfFullModal').style.display="none"; document.getElementById('pdfFullFrame').src=""; document.body.style.overflow="auto"; }
 
-// ربط البوطونات
 document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.project-card').forEach(card=>{
     const numEl=card.querySelector('.project-number'); if(!numEl) return;
@@ -558,8 +562,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   });
 });
-
-
 
 
 
