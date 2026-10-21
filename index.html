@@ -1,160 +1,649 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bilal Hammouti | Master Gestion Financière et Administrative</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#031326">
+    <meta name="description" content=" Bilal Hammouti, étudiant en Master Gestion Financière et Administrative à Oujda.">
 
+    <title>Bilal Hammouti | Master Gestion Financière et Administrative</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  <div id="intro">
-      <div class="intro-content">
-            <h1 class="intro-text">Bilal Hammouti</h1>
-            <p class="intro-sub">Gestion Financière et Administrative</p>
-      </div>
+    <!-- WELCOME ANIMATION -->
+<div id="intro">
+  <div class="intro-inner">
+    <div class="intro-text"><span>Welcome</span> <span>to my</span> <span>website</span></div>
+    <div class="intro-bar"></div>
   </div>
-
-  <header class="header">
-   <a href="#home" class="logo">
-  <div class="logo-mark">
-    <span class="bh">BH</span>
-  </div>
-  <span class="logo-text">BILAL HAMMOUTI</span>
-</a>
-    <button class="menu-toggle">☰</button>
-    <nav class="navbar">
-      <a href="#home">Accueil</a>
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#projects">Parcours</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <p class="welcome"></p>
-          <h1>Bonjour, je suis <span>BILAL Hammouti</span></h1>
-          <h2>طالب باحث في سلك الماستر<br>التدبير المالي والإداري</h2>
-          <p class="hero-desc">
-            حاصل على <strong>الإجازة في القانون العام - الدراسات المالية والإدارية</strong>،
-            وطالب باحث في <strong>ماستر التدبير المالي والإداري</strong> - FSJES Oujda.
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary">Mon parcours</a>
-            <a href="#contact" class="btn secondary">Me contacter</a>
-          </div>
-        </div>
-        <div class="hero-photo">
-          <div class="photo-ring">
-            <img src="profile2.jpeg" alt="Bilal Hammouti">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="section-title"><p>QUI SUIS-JE ?</p><h2>À propos de moi</h2></div>
-      <div class="about-grid">
-        <div class="about-image"><img src="profile3.jpeg" alt="Bilal"></div>
-        <div class="about-content">
-          <h3>Du Droit Public à la Gestion Financière</h3>
-          <p>أنا <strong>بلال حمُّوتي</strong>، حاصل على الإجازة في القانون العام تخصص الدراسات المالية والإدارية، وطالب باحث في ماستر التدبير المالي والإداري. مساري يجمع بين التكوين القانوني والتدبير الحديث.</p>
-          <div class="info-grid">
-            <div><strong>Licence</strong><span>Droit Public - Études Financières</span></div>
-            <div><strong>Master</strong><span>Gestion Financière et Administrative</span></div>
-            <div><strong>Domaine</strong><span>Finances Publiques / Audit</span></div>
-            <div><strong>Objectif</strong><span>Cadre Supérieur en Gestion</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills">
-      <div class="section-title"><p>EXPERTISE</p><h2>Mes compétences</h2></div>
-      <div class="skills-grid">
-        <article class="skill-card"><div class="skill-icon">⚖️</div><h3>Droit Public</h3><p>Droit administratif et constitutionnel.</p><div class="progress"><span style="width: 90%"></span></div></article>
-        <article class="skill-card"><div class="skill-icon">💰</div><h3>Finances Publiques</h3><p>Budget de l'État et Lois de finances.</p><div class="progress"><span style="width: 90%"></span></div></article>
-        <article class="skill-card"><div class="skill-icon">📊</div><h3>Contrôle de Gestion</h3><p>Tableaux de bord et pilotage.</p><div class="progress"><span style="width: 85%"></span></div></article>
-        <article class="skill-card"><div class="skill-icon">🔍</div><h3>Audit</h3><p>Audit interne et financier.</p><div class="progress"><span style="width: 80%"></span></div></article>
-      </div>
-    </section>
-<section id="projects" class="section projects">
-  <div class="section-title"><p>FORMATION</p><h2>Mon Parcours Académique</h2></div>
-  <div class="projects-grid">
-
-    <article class="project-card"><div class="project-number">01</div><h3>Licence Droit Public</h3><p>Études juridiques fondamentales.</p></article>
-
-    <article class="project-card"><div class="project-number">02</div><h3>Master Gestion Financière et Administrative</h3><p>Master GFA - En cours.</p></article>
-    <article class="project-card" id="card-03">
-      <div class="project-number">03</div>
-      <h3>Recherche & PFE</h3>
-      <p>Gouvernance et modernisation de l'administration.</p>
-      <div class="tags" style="display:flex; gap:8px; margin-top:12px;">
-        <button onclick="togglePFE()" style="padding:6px 14px; border-radius:15px; border:1px solid #d4af37; background:#d4af37; color:#0a1931; cursor:pointer; font-weight:700;">PFE</button>
-        <button onclick="toggleRecherche()" style="padding:6px 14px; border-radius:15px; border:1px solid #d4af37; background:transparent; color:#d4af37; cursor:pointer; font-weight:700;">Recherche</button>
-      </div>
-      <div id="pfe-list" style="display:none; margin-top:15px; border-top:1px solid rgba(212,175,55,0.3); padding-top:10px;">... كنجبد الملفات</div>
-      <div id="recherche-box" style="display:none; margin-top:15px;">
-        <input type="text" id="rechercheInput" placeholder="كتب عنوان البحث..." style="width:100%; padding:10px 14px; border-radius:20px; border:2px solid #d4af37; outline:none; background:#0a1931; color:#fff;">
-        <div id="rechercheResults" style="margin-top:10px;"></div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<div id="pdf-reader-inline" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#0f0f0f; z-index:999999; overflow:hidden;">
-  <div style="display:flex; align-items:center; gap:10px; padding:12px 20px; background:#0a1931; border-bottom:2px solid #d4af37;">
-    <button onclick="backToPFE()" style="background:#d4af37; border:none; border-radius:50%; width:38px; height:38px; cursor:pointer; font-size:20px; font-weight:bold; color:#0a1931;">←</button>
-    <span style="color:#d4af37; font-weight:700;">الرجوع لـ PFE</span>
-  </div>
-  <iframe id="pdf-viewer-card" src="" style="width:100%; height:calc(100vh - 65px); border:none; background:#fff;"></iframe>
 </div>
 
-<style>.mini-btn{margin-left:8px; padding:4px 10px; border-radius:12px; border:1px solid #d4af37; background:#0a1931; color:#d4af37; cursor:pointer;}.pfe-item{display:flex; justify-content:space-between; align-items:center; padding:8px; background:rgba(212,175,55,0.08); border-radius:8px; margin-top:6px;}</style>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="top">
+
+      <a class="brand" href="#accueil" aria-label="MEJ, accueil">
+  <span class="brand-mark" id="mejLogoBox" aria-hidden="true" style="background:none; border:none; padding:0; width:48px; height:48px; display:inline-flex; position:relative; overflow:hidden;">
+    <img id="logoNight" src="assets/logo-gold.jpeg" alt="MEJ" style="position:absolute; width:48px; height:48px; object-fit:contain; transition:opacity .3s; opacity:1;">
+    <img id="logoDay" src="assets/logo-silver.jpeg" alt="MEJ" style="position:absolute; width:48px; height:48px; object-fit:contain; transition:opacity .3s; opacity:0;">
+  </span>
+  <span class="brand-divider"></span>
+  <strong>Bilal Hammouti</strong>
+</a>
 
 <script>
-let allPFE=[];
-const GITHUB_USER="bilal-hammouti-26"; 
-const GITHUB_REPO="my-website"; 
-fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/projets`).then(r=>r.json()).then(files=>{
-  const pdfs=files.filter(f=>f.name.endsWith('.pdf'));
-  allPFE=pdfs.map(f=>({title:f.name.replace('.pdf','').replace(/-|_/g,' '),file:f.name}));
-  const list=document.getElementById('pfe-list'); list.innerHTML='';
-  pdfs.forEach(f=>{const t=f.name.replace('.pdf','').replace(/-|_/g,' '); list.innerHTML+=`<div class="pfe-item"><span>📄 ${t}</span><button onclick="openInCard('projets/${f.name}')" class="mini-btn">Voir</button></div>`;});
-});
-function togglePFE(){document.getElementById('recherche-box').style.display='none';const l=document.getElementById('pfe-list');l.style.display=l.style.display==='none'?'block':'none';}
-function toggleRecherche(){document.getElementById('pfe-list').style.display='none';document.getElementById('recherche-box').style.display='block';}
-function openInCard(u){document.getElementById('pdf-viewer-card').src=u;document.getElementById('pdf-reader-inline').style.display='block';document.body.style.overflow='hidden';}
-function backToPFE(){document.getElementById('pdf-reader-inline').style.display='none';document.getElementById('pdf-viewer-card').src='';document.body.style.overflow='auto';}
-</script>
-   
+// هاد السكريبت كيقلب على الثيم الحقيقي ديال السيت ديالك
+function updateMejLogo(){
+  const night = document.getElementById('logoNight');
+  const day = document.getElementById('logoDay');
+  if(!night || !day) return;
 
-    <section id="contact" class="section contact">
-      <div class="section-title"><p>CONTACT</p><h2>Contactez-moi</h2></div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Stage ou collaboration ?</h3>
-          <p>Ouvert aux stages en audit, finances publiques et gestion administrative.</p>
-          <div class="contact-item"><span>✉</span><div><strong>Email</strong><p>bilal.hammoutii.05@gmail.com</p></div></div>
-          <div class="contact-item"><span>☎</span><div><strong>Téléphone</strong><p>+212 772736830</p></div></div>
-          <div class="contact-item"><span>⌖</span><div><strong>Oujda, Maroc</strong></div></div>
+  // قلب على أي علامة ديال النهار
+  const isLight = document.documentElement.classList.contains('light') ||
+                  document.documentElement.getAttribute('data-theme') === 'light' ||
+                  document.body.classList.contains('light-mode') ||
+                  document.body.classList.contains('light') ||
+                  document.documentElement.classList.contains('light-mode');
+
+  if(isLight){
+    night.style.opacity = '0';
+    day.style.opacity = '1';
+    day.style.filter = 'drop-shadow(0 0 6px rgba(120,180,255,.4))';
+  }else{
+    night.style.opacity = '1';
+    day.style.opacity = '0';
+    night.style.filter = 'drop-shadow(0 0 6px rgba(255,215,0,.5))';
+  }
+}
+
+// 1. ملي كتحل الصفحة
+document.addEventListener('DOMContentLoaded', updateMejLogo);
+
+// 2. ملي كتكليكي على بوطون الليل/نهار (كنراقبو أي تبديل فالكلاس)
+new MutationObserver(updateMejLogo).observe(document.documentElement, {attributes:true, attributeFilter:['class','data-theme']});
+new MutationObserver(updateMejLogo).observe(document.body, {attributes:true, attributeFilter:['class']});
+
+// 3. زيد هاد السطر حدا البوطون ديالك ديال الثيم باش يتأكد
+setInterval(updateMejLogo, 500);
+</script>
+
+        <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+            <a class="active" href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Parcours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Changer le thème"
+            >
+                <span aria-hidden="true">☀</span>
+                <span class="toggle-track"><i></i></span>
+                <span aria-hidden="true">☾</span>
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Votre nom" required>
-          <input type="email" placeholder="Votre email" required>
-          <textarea rows="5" placeholder="Votre message" required></textarea>
-          <button type="submit" class="btn primary">Envoyer</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer><p>© 2026 Bilal Hammouti - Master Gestion Financière et Administrative</p></footer>
-  <script src="script.js"></script>
+    </header>
+
+
+    <!-- ================= CONTENU PRINCIPAL ================= -->
+    <main>
+
+        <!-- ================= ACCUEIL ================= -->
+        <section class="hero" id="accueil">
+
+            <div class="hero-backdrop" aria-hidden="true"></div>
+            <div class="hero-grid" aria-hidden="true"></div>
+
+            <div class="side-pagination" aria-hidden="true">
+                <span class="selected">01</span>
+                <span>02</span>
+                <span>03</span>
+            </div>
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    <span></span> 
+                </p>
+
+                <h1>
+                    Bonjour, je suis<br>
+                    <span>Bilal Hammouti</span>
+                </h1>
+
+                <h2 lang="ar" dir="rtl">
+                    طالب باحث في سلك الماستر<br>
+                    التدبير المالي والإداري
+                </h2>
+
+                <p class="hero-description" lang="ar" dir="rtl">
+                    حاصل على
+                    <strong>الإجازة في القانون العام - الدراسات المالية والإدارية</strong>،
+                    وطالب باحث في
+                    <strong>ماستر التدبير المالي والإداري</strong>،
+                    <br class="desktop-break">
+                    كلية العلوم القانونية والاقتصادية والاجتماعية، وجدة (FSJES Oujda).
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="button button-gold" href="#projets">
+                        <span aria-hidden="true">▣</span>
+                        Mon parcours
+                        <b>→</b>
+                    </a>
+
+                    <a class="button button-outline" href="#contact">
+                        <span aria-hidden="true">✉</span>
+                        Me contacter
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Photo principale -->
+            <div class="hero-photo">
+                <div class="photo-ring">
+                    <img
+                        src="assets/profile3.jpeg"
+                        alt="Portrait de Bilal Hammouti"
+                    >
+                </div>
+            </div>
+
+            <a
+                class="scroll-cue"
+                href="#apropos"
+                aria-label="Défiler vers la section À propos"
+            >
+                <span>↓</span>
+            </a>
+
+        </section>
+
+
+        <!-- ================= À PROPOS ET COMPÉTENCES ================= -->
+        <section class="intro-skills section-rule" id="apropos">
+
+            <!-- À propos -->
+            <article class="about-panel">
+
+                <div class="about-image">
+                    <img
+                        src="assets/profile.jpeg"
+                        alt="Portrait de Bilal Hammouti"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="about-content">
+
+                    <p class="eyebrow">QUI SUIS-JE ?</p>
+
+                    <h2>À propos de moi</h2>
+
+                    <h3>Du droit public à la gestion financière</h3>
+
+                    <p lang="ar" dir="rtl">
+                        أنا <strong>بلال حموتي</strong>، حاصل على الإجازة
+                        في القانون العام، تخصص الدراسات المالية والإدارية،
+                        وطالب باحث في ماستر التدبير المالي والإداري.
+                        يجمع مساري بين التكوين القانوني ومبادئ التدبير الحديث.
+                    </p>
+
+                    <div class="profile-facts">
+
+                        <div>
+                            <span class="fact-icon" aria-hidden="true">♙</span>
+                            <strong>Licence</strong>
+                            <small>Droit public - Études financières</small>
+                        </div>
+
+                        <div>
+                            <span class="fact-icon" aria-hidden="true">‹/›</span>
+                            <strong>Master</strong>
+                            <small>Gestion financière et administrative</small>
+                        </div>
+
+                        <div>
+                            <span class="fact-icon" aria-hidden="true">▣</span>
+                            <strong>Domaine</strong>
+                            <small>Finances publiques / Audit</small>
+                        </div>
+
+                        <div>
+                            <span class="fact-icon" aria-hidden="true">◎</span>
+                            <strong>Objectif</strong>
+                            <small>Cadre supérieur en gestion</small>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Compétences -->
+            <article class="skills-panel" id="competences">
+
+                <p class="eyebrow">CE QUE JE SAIS FAIRE</p>
+
+                <h2>Mes compétences</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <span class="skill-icon" aria-hidden="true">⚖️</span>
+
+                        <div class="skill-info">
+                            <strong>Droit public</strong>
+                            <p>Droit administratif et constitutionnel.</p>
+
+                            <div class="progress">
+                                <i style="--level: 90%"></i>
+                            </div>
+                        </div>
+
+                        <small>90%</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span class="skill-icon" aria-hidden="true">💰</span>
+
+                        <div class="skill-info">
+                            <strong>Finances publiques</strong>
+                            <p>Budget de l'État et lois de finances.</p>
+
+                            <div class="progress">
+                                <i style="--level: 85%"></i>
+                            </div>
+                        </div>
+
+                        <small>85%</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span class="skill-icon" aria-hidden="true">📊</span>
+
+                        <div class="skill-info">
+                            <strong>Contrôle de gestion</strong>
+                            <p>Tableaux de bord et pilotage.</p>
+
+                            <div class="progress">
+                                <i style="--level: 75%"></i>
+                            </div>
+                        </div>
+
+                        <small>75%</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span class="skill-icon" aria-hidden="true">🔍</span>
+
+                        <div class="skill-info">
+                            <strong>Audit</strong>
+                            <p>Audit interne et financier.</p>
+
+                            <div class="progress purple">
+                                <i style="--level: 80%"></i>
+                            </div>
+                        </div>
+
+                        <small>80%</small>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- ================= PARCOURS ACADÉMIQUE ================= -->
+        <section class="projects-section section-rule" id="projets">
+
+            <div class="section-heading">
+                <p class="eyebrow">FORMATION</p>
+                <h2>Mon parcours académique</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Formation 1 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">01</span>
+
+                        <div>
+                            <h3>Licence en droit public</h3>
+                            <p>
+                                Formation en droit public et études
+                                financières et administratives.
+                            </p>
+                        </div>
+
+                        <span class="project-symbol" aria-hidden="true">▣</span>
+
+                    </div>
+
+                    <div class="project-actions">
+
+                     <a
+                            class="file-button pdf"
+                            href="documents/.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📕   PDF
+                        </a>
+
+                        <a
+                            class="file-button word"
+                            href="documents/.docx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📘  Word
+                        </a>
+
+                        <a
+                           class="file-button ppt"
+                            href="documents/.pptx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📙  PPT
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Formation 2 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">02</span>
+
+                        <div>
+                            <h3>Master Gestion financière et administrative</h3>
+                            <p>Master GFA - Formation en cours.</p>
+                        </div>
+
+                        <span class="project-symbol" aria-hidden="true">◎</span>
+
+                    </div>
+
+                    <div class="project-actions">
+
+                       <a
+                            class="file-button pdf"
+                            href="documents/.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📕   PDF
+                        </a>
+
+                        <a
+                            class="file-button word"
+                            href="documents/.docx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📘  Word
+                        </a>
+
+                        <a
+                            class="file-button ppt"
+                            href="documents/.pptx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📙  PPT
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Formation 3 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">03</span>
+
+                        <div>
+                            <h3>Recherche et PFE</h3>
+                            <p>
+                                Intérêt pour la gouvernance et la
+                                modernisation de l'administration.
+                            </p>
+                        </div>
+
+                        <span class="project-symbol" aria-hidden="true">⬡</span>
+
+                    </div>
+
+                    <div class="project-actions">
+
+                       <a
+                            class="file-button pdf"
+                            href="documents/.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📕   PDF
+                        </a>
+
+                        <a
+                            class="file-button word"
+                            href="documents/.docx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📘  Word
+                        </a>
+
+                        <a
+                         class="file-button ppt"
+                            href="documents/.pptx"
+                             target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            📙  PPT
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="document-note">
+                Remplacez les fichiers d'exemple dans le dossier
+                <code>documents</code> par vos vrais documents.
+            </p>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact-section section-rule" id="contact">
+
+            <div class="contact-title">
+                <p class="eyebrow">CONTACT</p>
+                <h2>Contactez-moi</h2>
+            </div>
+
+            <div class="contact-details">
+
+                <a
+                    class="contact-item"
+                    href="mailto:bilal.hammoutii.05@gmail.com"
+                >
+                    <span aria-hidden="true">✉</span>
+
+                    <div>
+                        <strong>Email</strong>
+                        <p>bilal.hammoutii.05@gmail.com</p>
+                    </div>
+                </a>
+
+                <a
+                    class="contact-item"
+                    href="tel:+212772736830"
+                >
+                    <span aria-hidden="true">☎</span>
+
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p>+212 772 736 830</p>
+                    </div>
+                </a>
+
+                <div class="contact-item">
+                    <span aria-hidden="true">⌖</span>
+
+                    <div>
+                        <strong>Localisation</strong>
+                        <p>Oujda, Maroc</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Formulaire -->
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-row">
+
+                    <label class="sr-only" for="name">Votre nom</label>
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Votre nom"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <label class="sr-only" for="email">Votre e-mail</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Votre e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <label class="sr-only" for="subject">Sujet</label>
+                <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Sujet"
+                    required
+                >
+
+                <label class="sr-only" for="message">Votre message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="3"
+                    placeholder="Votre message"
+                    required
+                ></textarea>
+
+                <button
+                    class="button button-gold send-button"
+                    type="submit"
+                >
+                    ➤ Envoyer le message
+                </button>
+
+                <p class="form-note" id="formNote" role="status">
+                    Le formulaire ouvre votre application e-mail pour envoyer le message.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <span>
+            © <span id="year">2026</span>
+            Bilal Hammouti - Master Gestion Financière et Administrative
+        </span>
+
+        <a href="#top">↑ &nbsp;Retour en haut</a>
+
+    </footer>
+     <!-- بار صغير ديال ليستة -->
+<div id="smallBarModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:99998; backdrop-filter:blur(5px);">
+  <div style="background:#121e36; width:90%; max-width:500px; margin:80px auto; border-radius:20px; border:1px solid rgba(212,175,55,.3); padding:15px; max-height:70vh; display:flex; flex-direction:column;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; padding:5px 10px;">
+      <h3 id="smallBarTitle" style="color:#fff; margin:0; font-size:18px;">📁 Documents</h3>
+      <button onclick="closeSmallBar()" style="background:transparent; border:1px solid #d4af37; color:#d4af37; width:30px; height:30px; border-radius:50%; cursor:pointer;">✕</button>
+    </div>
+    <div id="docList" style="overflow-y:auto; display:flex; flex-direction:column; gap:10px; padding-right:5px;"></div>
+  </div>
+</div>
+
+<!-- قارئ PDF فالشاشة كاملة -->
+<div id="pdfFullModal" style="display:none; position:fixed; inset:0; background:#0a1931; z-index:99999; flex-direction:column;">
+  <div style="height:60px; background:#08142a; display:flex; justify-content:space-between; align-items:center; padding:0 20px; border-bottom:1px solid rgba(212,175,55,.3);">
+    <span id="pdfFullTitle" style="color:#d4af37; font-weight:bold;"></span>
+    <button onclick="closePdfFull()" style="background:#d4af37; border:none; width:38px; height:38px; border-radius:50%; cursor:pointer; font-size:18px; font-weight:bold; color:#0a1931;">✕</button>
+  </div>
+  <iframe id="pdfFullFrame" src="" style="flex:1; border:none; background:#fff;"></iframe>
+</div>
+
+<style>
+#docList::-webkit-scrollbar{width:6px} #docList::-webkit-scrollbar-thumb{background:#d4af37; border-radius:10px}
+.doc-row{display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,.08); padding:12px 15px; border-radius:14px; border:1px solid rgba(255,255,255,.05); transition:.2s;}
+.doc-row:hover{background:rgba(212,175,55,.12); border-color:rgba(212,175,55,.3);}
+.doc-name{color:#fff; font-size:15px; display:flex; align-items:center; gap:10px;}
+.btn-voir{background:#0f2450; border:1.5px solid #d4af37; color:#d4af37; padding:6px 18px; border-radius:20px; cursor:pointer; font-weight:bold; transition:.2s;}
+.btn-voir:hover{background:#d4af37; color:#0a1931;}
+</style>
+
 </body>
 </html>
+
+
