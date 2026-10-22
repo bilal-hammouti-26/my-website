@@ -538,17 +538,23 @@ async function openDocs(carteNum, type){
 function openPdfFull(name, url, type){
   document.getElementById('pdfFullTitle').innerText = name;
   const frame = document.getElementById('pdfFullFrame');
+
+  let viewerUrl = '';
   
-  // قارئ Mozilla الرسمي - كيخلي PDF يتقرا فالصفحة
-  const viewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(url)}`;
+  // إلى كان PDF خليه بالقارئ القديم ديال Mozilla
+  if(name.toLowerCase().endsWith('.pdf')){
+      viewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(url)}`;
+  } 
+  // إلى كان PPT ولا WORD خدم بقارئ ديال مايكروسوفت
+  else {
+      viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(url)}`;
+  }
+  
   frame.src = viewerUrl;
-  
+
   document.getElementById('pdfFullModal').style.display = "flex";
   document.getElementById('smallBarModal').style.display = "none";
-
-
 }
-
 function closeSmallBar(){ document.getElementById('smallBarModal').style.display="none"; document.body.style.overflow="auto"; }
 function closePdfFull(){ document.getElementById('pdfFullModal').style.display="none"; document.getElementById('pdfFullFrame').src=""; document.body.style.overflow="auto"; }
 
